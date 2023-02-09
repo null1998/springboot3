@@ -1,4 +1,4 @@
-FROM java:17
+FROM openjdk:17-jdk-slim-buster
 
 ENV SERVER_PORT 8999
 
