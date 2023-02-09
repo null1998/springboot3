@@ -19,6 +19,6 @@ public class Application {
 
     @GetMapping("/hello")
     public String hello() {
-        return "hello world github actions " + LocalDateTime.now();
+        return "hello world github actions workflow！" + LocalDateTime.now();
     }
 }
