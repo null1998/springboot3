@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
+
 /**
  * @author huang
  */
@@ -17,6 +19,6 @@ public class Application {
 
     @GetMapping("/hello")
     public String hello() {
-        return "hello world";
+        return "hello world " + LocalDateTime.now();
     }
 }
